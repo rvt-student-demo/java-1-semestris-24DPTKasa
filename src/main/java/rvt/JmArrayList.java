@@ -13,8 +13,9 @@ public class JmArrayList {
             String inputLine = scanner.nextLine();
             if (inputLine.isEmpty()) {
                 System.out.println("Search for?");
-                scanner.nextLine();
-                System.out.println(scanner.nextLine());
+                if (list.contains(scanner.nextLine())) {
+                    System.out.println(scanner.nextLine() + "was found");
+                }
                 break;
             }
 
