@@ -18,7 +18,6 @@ public class JmArrayList {
                 }
                 break;
             }
-
         }
         scanner.close();
 
