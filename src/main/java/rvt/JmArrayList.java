@@ -7,7 +7,6 @@ public class JmArrayList {
     public static void main(String[] args) {
       OnlyTheseNumbers();
     }
-
     public static void OnlyTheseNumbers() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> numbers = new ArrayList<>();
