@@ -116,6 +116,7 @@ public class ch19 {
             System.out.println(word.charAt(i));
         }
         scanner.close();
+        
     }
 
 }
