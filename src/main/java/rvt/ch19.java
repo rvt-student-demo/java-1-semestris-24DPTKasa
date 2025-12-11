@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ch19 {
     public static void main(String[] args) {
-        ex5();
+        ex7();
     }
     public static void ex1() {
         Scanner scanner = new Scanner(System.in);
@@ -71,19 +71,51 @@ public class ch19 {
         
         int sum = sumhigh - sumlow;
         System.out.println("sum = " + sum);
-       
+        scanner.close();
 
     }
     public static void ex5(){
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a word: ");
         String word = scanner.nextLine();
-        System.out.println(word);
         int times;
         times = word.length();
         System.out.println(times);
+        for (int i = 0; i < times; i++ ) {
+            System.out.println(word);
+        }
+        scanner.close();
         
     }
-    public static void ex6(){}
-    public static void ex7(){}
+    public static void ex6(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter first word:");
+        String first = scanner.nextLine();
+
+        System.out.println("Enter second word:");
+        String second = scanner.nextLine();
+
+        int totalLength = 30;
+        int dotCount = totalLength - first.length() - second.length();
+
+        System.out.println(first);
+        for (int i = 0; i < dotCount; i++) {
+            System.out.println(".");
+        }
+        System.out.println(second);
+        scanner.close();
+    }
+    public static void ex7(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a word: ");
+        String word = scanner.nextLine();
+
+        for (int i = 0; i < word.length(); i++) {
+            System.out.println(word.charAt(i));
+        }
+        scanner.close();
+    }
 
 }
